@@ -20,13 +20,22 @@ Sound effects and notifications for [Claude Code](https://claude.ai/code) - the 
 
 ## Requirements
 
-- macOS
+- **macOS** (primary support)
 - [Claude Code](https://claude.ai/code)
 - [terminal-notifier](https://github.com/julienXX/terminal-notifier) (for desktop notifications)
 
 ```bash
 brew install terminal-notifier
 ```
+
+### Windows / Linux Users
+
+This tool is designed for macOS. On other platforms:
+
+- **Rock Mode** 🎸 works out of the box (uses bundled mp3 files)
+- **Quiet Mode** 🎵 requires you to provide your own sound files (the default uses macOS system sounds)
+- You'll need to modify the scripts to use a different audio player (e.g., `powershell` on Windows, `paplay` on Linux)
+- Desktop notifications will need alternative tools (e.g., `notify-send` on Linux)
 
 ## Installation
 
