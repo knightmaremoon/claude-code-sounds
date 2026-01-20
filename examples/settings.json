@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/sounds/submit-sound.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/sounds/notification-sound.sh & terminal-notifier -title 'Claude Code' -message '需要你的注意' -activate com.todesktop.230313mzl4w4u92"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/sounds/random-sound.sh & terminal-notifier -title 'Claude Code' -message '任务完成' -activate com.todesktop.230313mzl4w4u92"
+          }
+        ]
+      }
+    ]
+  }
+}
